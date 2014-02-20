@@ -1,11 +1,11 @@
 # Simple nodejs boot tasks manager
 
 class Tasker
-  constructor: (@end) ->
+  constructor: (@_end = ->) ->
 
   tasks: []
   todo: 0
-  _doSync: false
+  _doSync: true
 
   sync: ->
     @_doSync = true
@@ -14,9 +14,9 @@ class Tasker
     @_doSync = false
 
   on: (done, func) ->
-    @end = func if done is 'done'
+    @_end = func if done is 'done'
 
-  ondone: (@end) ->
+  ondone: (@_end) ->
 
   task: (cb) ->
     if cb
@@ -33,7 +33,7 @@ class Tasker
 
   done: ->
     if not --@todo
-      @end.apply null, []
+      @_end.apply null, []
     else if @_doSync
       @tasks.shift().apply @context, []
 
