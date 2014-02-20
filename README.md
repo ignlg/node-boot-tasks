@@ -34,6 +34,7 @@ tasks.do()
 ## Functions
 ### Constructor
 ```javascript
+BootTasks = require 'boot-tasks'
 new BootTasks(end)
 ```
 Optional _end_ parameter as a function to call at the end.
@@ -51,7 +52,7 @@ Add a _func_ function as a task.
 Call at the end of every task to continue execution (only sync mode).
 
 ### .do(context)
-Starts to run tasks. Optional _context_ parameter for the tasks.
+Process all the tasks. Optional _context_ parameter for the tasks.
 
 ## To-Do
 * Dependency management
