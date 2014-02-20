@@ -2,6 +2,13 @@
 
 Simple nodejs boot tasks manager. Executes a list of tasks, sync or async. That's all.
 
+[![NPM](https://nodei.co/npm/boot-tasks.png)](https://npmjs.org/package/boot-tasks)
+
+## Installation
+```
+$ npm install boot-tasks
+```
+
 ## Usage example in CoffeeScript:
 ```coffeescript
 BootTasks = require 'boot-tasks'
