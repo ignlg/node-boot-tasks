@@ -1,16 +1,22 @@
 {
-  "author": "Ignacio Lago",
   "name": "boot-tasks",
   "description": "Simple nodejs boot tasks manager. Executes a list of tasks, sync or async. That's all.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": ["tasks", "boot"],
+  "author": {
+    "name": "Ignacio Lago",
+    "email" : "ignacio@ignaciolago.com",
+    "url" : "http://portfolio.ignlg.com/"
+  },
   "dependencies": {},
   "main": "./tasker",
   "repository" : {
     "type": "git",
     "url": "https://github.com/ignlg/node-boot-tasks.git"
   },
+  "homepage": "https://github.com/ignlg/node-boot-tasks",
   "engines": {
     "node": "*"
-  }
+  },
+  "license": "MIT"
 }
