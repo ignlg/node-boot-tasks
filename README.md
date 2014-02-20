@@ -2,7 +2,7 @@
 
 Simple nodejs boot tasks manager. Executes a list of tasks, sync or async. That's all.
 
-## Usage example:
+## Usage example in CoffeeScript:
 ```coffeescript
 BootTasks = require 'boot-tasks'
 
@@ -29,13 +29,13 @@ tasks.task ->
 
 # Run tasks
 tasks.do()
-´´´
+```
 
 ## Functions
 ### Constructor
 ```javascript
 new BootTasks(end)
-´´´
+```
 Optional _end_ parameter as a function to call at the end.
 
 ### .sync() and .async()
