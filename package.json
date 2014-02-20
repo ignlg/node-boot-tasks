@@ -1,7 +1,7 @@
 {
   "name": "boot-tasks",
   "description": "Simple nodejs boot tasks manager. Executes a list of tasks, sync or async. That's all.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": ["tasks", "boot"],
   "author": {
     "name": "Ignacio Lago",
