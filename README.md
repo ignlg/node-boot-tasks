@@ -35,7 +35,7 @@ tasks.do()
 ### Constructor
 ```javascript
 BootTasks = require 'boot-tasks'
-new BootTasks(end)
+tasks = new BootTasks(end)
 ```
 Optional _end_ parameter as a function to call at the end.
 
